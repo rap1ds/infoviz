@@ -1,8 +1,8 @@
 \documentclass[a4paper]{article}
 
 % Encoodaus, joka sopii suomenkielellä (esim. ä ja ö)
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 % Suomenkielinen tavutus
 \usepackage[finnish]{babel}
@@ -84,9 +84,57 @@ Formula?
 \subsection{Unity (CCA)}
 
 \subsection{Depth Cue theory +++++}
-Explain
 
-List and explain depth cues
+Depth cue is a source of information about 3D space. Visual system processes these cues and provides a perception of space. 
+
+Three categories (based on how they can be reproduced:
+\begin{itemize}
+  \item Monocular static - static picture
+  \item Monocular dynamic - moving picture
+  \item Binocular - requires two eyes
+\end{itemize}
+
+Monocular static (Pictorial)
+\begin{itemize}
+  \item Linear perspective - Geometry, ray from each point in the env
+  \item Texture gradient - Uniformly textured surface projected onto the picture plane.
+  \item Size gradient - More distant objects become smaller
+  \item Occlusion - Object overlapping another appears closer to the observer
+  \item Depth of focus - Eye focus on one object, the (more distant) background becomes blurry
+  \item Cast shadows - Bouncing ball
+  \item Shape-from-shading - Use of artificial light source
+  \item Depth-from-eye accommondation (nonpictorial) 
+\end{itemize}
+
+Monocular dynamic (Moving picture)
+\begin{itemize}
+  \item Structure-from-motion (kinectic depth, motion parallax) - Motion parallax: Looking out of a train window. Objects closer to us move faster than objects closer to the horizon. Kinectic depth: Bent 3D wire projected onto a screen. Result is a 2D line, but if rotated the 3D shape of the wire come apparent.
+\end{itemize}
+
+Binocular
+\begin{itemize}
+  \item Eye convergence
+  \item Stereoscopic depth
+\end{itemize}
+
+No unified cognitive theory for space perception
+
+Experimental evidence that several depth cues are involved and weighted differently for different perception tasks.
+
+Moon illusion: The moon appears larger when it is close to the horizon than when it is overhead. There are many theories as to why, but no single accepted explanation.
+
+
+List and explain at least 5 depth cues
+
+Occlusion - If one object overlaps or occludes another, it appears closer to the observer. A strong, but binary, detph cue.
+
+Relative Size - Bigger objects appear to be closer to the observer.
+
+Linear Height - Objects closer to the horizon line appear further away.
+
+Linear Perspective - Related to both relative size and linear height. The geometry of linear perspective is obtained by sending a ray from each point in the environment through a picture plane to a single fixed point.
+
+Aerial Perspective (=distance fog) - As the distance between an object and a viewer increases, the contrast between the object and its background decreases, and the contrast of any markings or details within the object also decreases. The colours of the object also become less saturated and shift towards the background color (usually blue).
 
 \subsection{Dimensionality reduction +++++}
 
@@ -125,6 +173,8 @@ Influental theory?
 \subsection{Visual attention theory ++}
 
 Ways that allow information to pop-up
+
+
 
 \subsection{Active from the low-level point of view}
 
@@ -200,7 +250,7 @@ Priming effect: recognition is easier if prior exposure (altistuminen) to releva
 
 Palmer et al (1981): Many objects have a canonical view from which they are most easily identified. We recognize objects by matching the visual information with "key views"
 
-Implications:
+Implications in visualization:
 
 Images easily recognized: Use icons
 
@@ -217,6 +267,14 @@ Theory and implications in information visualization
 We recognize object not only based on the image but based on the structure, should as silhouettes of the object. Two identical objects in a different angle can be easily recognized as the same object despite the very different visual image.
 
 As a consequnce a line drawing of a hand may be easier to recognize than a picture of a hand
+
+Implications in visualizations:
+
+(See the geon theory)
+
+If geons (cylinders, cones etc.) are indeed perceptual primitives, it will make sense to construct diagrams using these geons (geon diagram). 
+
+Geons can be used to visualize relationships in a natural way: because of gravity, above is different from below. Object inside another object: representation of a part-of relationship. One object touching another: representation of dependency. Thick bar between objects: strong relationship. A thinner, transparent bar between objects: weak relationship.
 
 \subsection{Semiotics of graphics ++}
 
